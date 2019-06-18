@@ -98,11 +98,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export KUBECONFIG="$HOME/Documents/git/kubeconfigs/config"
-#export MAVEN_OPTS="-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=5000"
-#export GRADLE_OPTS="-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=1080"
 alias cdgit="cd $HOME/Documents/git"
 alias changecontexdev="kubectl config use-context dev-fss"
 alias changecontexprod="kubectl config use-context prod-fss"
 alias with_proxy='https_proxy=socks5://localhost:14122 http_proxy=socks5://localhost:14122'
 alias wp='with_proxy'
 export MAVEN_OPTS='-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=14122 -DsocksNonProxyHosts="127.0.0.1|dl.bintray.com|repo.maven.apache.org"'
+alias jdk8='JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home" PATH="$PATH:/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/bin"'
+alias jdk10='JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home" PATH="$PATH:/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin"'
+alias jdk11='JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home" PATH="$PATH:/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/bin"'
+alias jenkinsdigisyfo="ssh -A -t -l K143566 a01apvl00057.adeo.no \ ssh -A -t -l K143566 a01apvl00130.adeo.no"
+alias changecontextpreprod="kubectl config use-context preprod-fss"
+alias changecontextprod="kubectl config use-context prod-fss"
+alias mvnjdk8="JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home mvn clean install"
