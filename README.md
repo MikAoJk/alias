@@ -1,1 +1,1 @@
-# Repo for aliaser som er grei å ha
+# Repo for aliaser som er greie å ha
