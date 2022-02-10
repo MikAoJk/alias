@@ -88,15 +88,44 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 
-# My aliases
+# My Aliases
 alias changejdk='sudo update-alternatives --config java'
 alias cdgit='cd /home/joakim/git'
-export KUBECONFIG="/home/joakim/git/kubeconfigs/config"
-
-# some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias listProgramms='apt list --installed' 
+alias removeProgramms='sudo apt remove' 
+
+# kubectl
+#Finn alle poder:
+alias getpods='kubectl get pods'
+#Se hvilke miljø du kjører mot
+alias getcontext='kubectl config current-context'
+#Se på en pods log kubectl logs <podname>
+alias getlogsforpod='kubectl logs'
+#ta ned pod (kubernetes vil fyre opp en ny pod hvis antall poder er mindre enn minimum konfigurert).
+alias deletePod='kubectl delete pod'
+#slette hele applikasjonen fra clusteret, ingen nye poder vil bli startet før en evt. deployer app på nytt.
+alias deleApplication='kubectl delete application'
+#Beskriv poden
+alias describepod='kubectl describe pods'
+#Endre cluster:
+alias changecontext='kubectl config use-context'
+
+# docker
+# Shows all docker images
+alias dockerimages='docker image ls'
+# Delets the docker image
+alias dockerdelte='docker rmi'
+# Start docker compose
+alias dockercompouseup='docker-compose up'
+# Start docker compose and build
+alias dockercompouseupbuild='docker-compose up --build'
+
+
+# My exports
+export KUBECONFIG="/home/joakim/git/kubeconfigs/config"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -121,3 +150,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# fnm
+export PATH=/home/joakim/.fnm:$PATH
+eval "`fnm env`"
