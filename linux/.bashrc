@@ -95,7 +95,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias listProgramms='apt list --installed' 
-alias removeProgramms='sudo apt remove' 
+alias removeProgramms='sudo apt remove'
+alias gitolainen='git pull --rebase && ./gradlew build && git push' 
 
 # kubectl
 #Finn alle poder:
@@ -123,9 +124,17 @@ alias dockercompouseup='docker-compose up'
 # Start docker compose and build
 alias dockercompouseupbuild='docker-compose up --build'
 
+# vault
+alias gethelsespleisdbsecrets='vault read postgresql/preprod-fss/creds/spleis-readonly'
+alias gethelsespesialistdbsecrets='vault read postgresql/preprod-fss/creds/spesialist-readonly'
+alias vaultlogin='sudo vault login -method=oidc'
+
 
 # My exports
+export ORG_GRADLE_PROJECT_githubUser='MikAoJk'
+export ORG_GRADLE_PROJECT_githubPassword='$thisiswhere is should put my secret'
 export KUBECONFIG="/home/joakim/git/kubeconfigs/config"
+export VAULT_ADDR=https://vault.adeo.no
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
