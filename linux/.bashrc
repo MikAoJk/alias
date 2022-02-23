@@ -113,6 +113,8 @@ alias deleApplication='kubectl delete application'
 alias describepod='kubectl describe pods'
 #Endre cluster:
 alias changecontext='kubectl config use-context'
+#Endre namespace
+alias changenamespacetbd='kubectl config set-context --current --namespace=tbd'
 
 # docker
 # Shows all docker images
