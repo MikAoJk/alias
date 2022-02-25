@@ -100,21 +100,21 @@ alias gitolainen='git pull --rebase && ./gradlew build && git push'
 
 # kubectl
 #Finn alle poder:
-alias getpods='kubectl get pods'
+alias kubectlgetpods='kubectl get pods'
 #Se hvilke miljø du kjører mot
-alias getcontext='kubectl config current-context'
+alias kubectlgetcontext='kubectl config current-context'
 #Se på en pods log kubectl logs <podname>
-alias getlogsforpod='kubectl logs'
+alias kubectlgetlogsforpod='kubectl logs'
 #ta ned pod (kubernetes vil fyre opp en ny pod hvis antall poder er mindre enn minimum konfigurert).
-alias deletePod='kubectl delete pod'
+alias kubectldeletePod='kubectl delete pod'
 #slette hele applikasjonen fra clusteret, ingen nye poder vil bli startet før en evt. deployer app på nytt.
-alias deleApplication='kubectl delete application'
+alias kubectldeleApplication='kubectl delete application'
 #Beskriv poden
-alias describepod='kubectl describe pods'
-#Endre cluster:
-alias changecontext='kubectl config use-context'
+alias kubectldescribepod='kubectl describe pods'
+#Endre cluster
+alias kubectlchangecontext='kubectl config use-context'
 #Endre namespace
-alias changenamespacetbd='kubectl config set-context --current --namespace=tbd'
+alias kubectlchangenamespacetbd='kubectl config set-context --current --namespace=tbd'
 
 # docker
 # Shows all docker images
@@ -127,8 +127,8 @@ alias dockercompouseup='docker-compose up'
 alias dockercompouseupbuild='docker-compose up --build'
 
 # vault
-alias gethelsespleisdbsecrets='vault read postgresql/preprod-fss/creds/spleis-readonly'
-alias gethelsespesialistdbsecrets='vault read postgresql/preprod-fss/creds/spesialist-readonly'
+alias vaultgethelsespleisdbsecrets='vault read postgresql/preprod-fss/creds/spleis-readonly'
+alias vaultgethelsespesialistdbsecrets='vault read postgresql/preprod-fss/creds/spesialist-readonly'
 alias vaultlogin='sudo vault login -method=oidc'
 
 
