@@ -125,6 +125,18 @@ alias dockerdelte='docker rmi'
 alias dockercompouseup='docker-compose up'
 # Start docker compose and build
 alias dockercompouseupbuild='docker-compose up --build'
+#Lists only running Docker containers.
+alias dockercontainersshow='docker ps'
+#Kill my running Docker container
+alias dockerkill='docker kill'
+#List all conatinaers 
+alias dockercontainershowall='docker container ls -all'
+#Stop conatinaer
+alias dockercontainerstop='docker container stop'
+#Remove conatinaer
+alias dockercontainerremove='docker container rm'
+#find ip adress of container
+alias dockercontainerfindip='docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}''
 
 # vault
 alias vaultgethelsespleisdbsecrets='vault read postgresql/preprod-fss/creds/spleis-readonly'
