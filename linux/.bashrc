@@ -143,6 +143,13 @@ alias vaultgethelsespleisdbsecrets='vault read postgresql/preprod-fss/creds/sple
 alias vaultgethelsespesialistdbsecrets='vault read postgresql/preprod-fss/creds/spesialist-readonly'
 alias vaultlogin='sudo vault login -method=oidc'
 
+#GCP
+alias gcplogin='gcloud auth login --update-adc'
+alias gcpsetdev='gcloud config set project $yourprojectid'
+alias gcpsetprod='gcloud config set project $yourprojectid'
+## Add inn the appname, example spesialist
+alias gcppostgressqlproxy='nais postgres proxy'
+
 
 # My exports
 export ORG_GRADLE_PROJECT_githubUser='MikAoJk'
