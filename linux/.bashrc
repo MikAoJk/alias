@@ -114,7 +114,7 @@ alias kubectldescribepod='kubectl describe pods'
 #Endre cluster
 alias kubectlchangecontext='kubectl config use-context'
 #Endre namespace
-alias kubectlchangenamespacetbd='kubectl config set-context --current --namespace=tbd'
+alias kubectlchangenamespacetbd='kubectl config set-context --current --namespace=teamsykmelding'
 
 # docker
 # Shows all docker images
