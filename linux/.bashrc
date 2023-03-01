@@ -96,7 +96,8 @@ alias la='ls -A'
 alias l='ls -CF'
 alias listProgramms='apt list --installed' 
 alias removeProgramms='sudo apt remove'
-alias gitolainen='git pull --rebase && ./gradlew build && git push' 
+alias gitolainen='git pull --rebase && ./gradlew build && git push'
+alias mountonedrive='rclone --vfs-cache-mode writes mount "onedrive":  ~/onedrive'
 
 # kubectl
 #Finn alle poder:
@@ -114,7 +115,7 @@ alias kubectldescribepod='kubectl describe pods'
 #Endre cluster
 alias kubectlchangecontext='kubectl config use-context'
 #Endre namespace
-alias kubectlchangenamespacetbd='kubectl config set-context --current --namespace=teamsykmelding'
+alias kubectlchangenamespaceteamsykmelding='kubectl config set-context --current --namespace=teamsykmelding'
 
 # docker
 # Shows all docker images
@@ -155,7 +156,9 @@ alias gcppostgressqlproxy='nais postgres proxy'
 export ORG_GRADLE_PROJECT_githubUser='MikAoJk'
 export ORG_GRADLE_PROJECT_githubPassword='$thisiswhere is should put my secret'
 export KUBECONFIG="/home/joakim/git/kubeconfigs/config"
-export VAULT_ADDR=https://vault.adeo.no
+export NPM_AUTH_TOKEN='$thisiswhere is should put my secret'
+export NVM_DIR="/home/joakim/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -180,7 +183,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# fnm
-export PATH=/home/joakim/.fnm:$PATH
-eval "`fnm env`"
