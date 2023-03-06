@@ -98,6 +98,8 @@ alias listProgramms='apt list --installed'
 alias removeProgramms='sudo apt remove'
 alias gitolainen='git pull --rebase && ./gradlew build && git push'
 alias mountonedrive='rclone --vfs-cache-mode writes mount "onedrive":  ~/onedrive'
+alias changeNode18='nvm use 18.14.2'
+alias changeNode19='nvm use 19.7.0'
 
 # kubectl
 #Finn alle poder:
