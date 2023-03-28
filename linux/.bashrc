@@ -118,6 +118,11 @@ alias kubectldescribepod='kubectl describe pods'
 alias kubectlchangecontext='kubectl config use-context'
 #Endre namespace
 alias kubectlchangenamespaceteamsykmelding='kubectl config set-context --current --namespace=teamsykmelding'
+alias kubectlCreateSecret='kubectl create secret generic my-secret --from-literal=key1=supersecret'
+alias kubectlGetSecret='kubectl get secret db-user-pass -o jsonpath="'"{.data}"'"'
+
+# apt
+alias holdkubectl='sudo apt-mark hold kubectl'
 
 # docker
 # Shows all docker images
