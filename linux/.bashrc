@@ -119,7 +119,7 @@ alias kubectlchangecontext='kubectl config use-context'
 #Endre namespace
 alias kubectlchangenamespaceteamsykmelding='kubectl config set-context --current --namespace=teamsykmelding'
 alias kubectlCreateSecret='kubectl create secret generic my-secret --from-literal=key1=supersecret'
-alias kubectlGetSecret='kubectl get secret db-user-pass -o jsonpath="'"{.data}"'"'
+alias kubectlGetSecret='kubectl get secret db-user-pass -o jsonpath="'"{.data.password}"'" | base64 --decode'
 
 # apt
 alias holdkubectl='sudo apt-mark hold kubectl'
