@@ -120,6 +120,7 @@ alias kubectlchangecontext='kubectl config use-context'
 alias kubectlchangenamespaceteamsykmelding='kubectl config set-context --current --namespace=teamsykmelding'
 alias kubectlCreateSecret='kubectl create secret generic my-secret --from-literal=key1=supersecret'
 alias kubectlGetSecret='kubectl get secret db-user-pass -o jsonpath="'"{.data.password}"'" | base64 --decode'
+alias kubectlExecShell='kubectl exec --stdin --tty smtss-6dc66d6cf9-92fwh -- /bin/bash'
 
 # apt
 alias holdkubectl='sudo apt-mark hold kubectl'
@@ -166,6 +167,9 @@ export KUBECONFIG="/home/joakim/git/kubeconfigs/config"
 export NPM_AUTH_TOKEN='$thisiswhere is should put my secret'
 export NVM_DIR="/home/joakim/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export DENO_INSTALL="/home/joakim/.deno"
+export PATH="$DENO_INSTALL/bin:$HOME/.cargo/env:$PATH"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
