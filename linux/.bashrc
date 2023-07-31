@@ -163,7 +163,6 @@ alias gcppostgressqlproxy='nais postgres proxy'
 # My exports
 export ORG_GRADLE_PROJECT_githubUser='MikAoJk'
 export ORG_GRADLE_PROJECT_githubPassword='$thisiswhere is should put my secret'
-export KUBECONFIG="/home/joakim/git/kubeconfigs/config"
 export NPM_AUTH_TOKEN='$thisiswhere is should put my secret'
 export NVM_DIR="/home/joakim/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
