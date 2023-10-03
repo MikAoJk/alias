@@ -164,8 +164,12 @@ alias gcppostgressqlproxy='nais postgres proxy'
 export ORG_GRADLE_PROJECT_githubUser='MikAoJk'
 export ORG_GRADLE_PROJECT_githubPassword='$thisiswhere is should put my secret'
 export NPM_AUTH_TOKEN='$thisiswhere is should put my secret'
-export NVM_DIR="/home/joakim/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export NVM_DIR="$HOME/.nvm"
+# This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 export DENO_INSTALL="/home/joakim/.deno"
 export PATH="$DENO_INSTALL/bin:$HOME/.cargo/env:$PATH"
