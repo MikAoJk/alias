@@ -159,6 +159,8 @@ alias gcpsetprod='gcloud config set project $yourprojectid'
 ## Add inn the appname, example spesialist
 alias gcppostgressqlproxy='nais postgres proxy'
 
+#ASDF
+. "$HOME/.asdf/asdf.sh"
 
 # My exports
 export ORG_GRADLE_PROJECT_githubUser='MikAoJk'
@@ -177,6 +179,8 @@ export PATH="$DENO_INSTALL/bin:$HOME/.cargo/env:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
+
+export KUBELOGIN='$HOME/.asdf/downloads/kubelogin/0.0.32/kubelogin'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
