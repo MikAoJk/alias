@@ -174,8 +174,6 @@ export NVM_DIR="$HOME/.nvm"
 export DENO_INSTALL="/home/joakim/.deno"
 export PATH="$DENO_INSTALL/bin:$HOME/.cargo/env:$PATH"
 
-export KUBECONFIG='~/.kube'
-
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
