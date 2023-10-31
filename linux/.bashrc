@@ -159,6 +159,12 @@ alias gcpsetprod='gcloud config set project $yourprojectid'
 ## Add inn the appname, example spesialist
 alias gcppostgressqlproxy='nais postgres proxy'
 
+#SDK man
+alias javalist='sdk list java'
+alias javainstall21='sdk install java 21-tem'
+alias javaversion='sdk current java'
+
+
 #ASDF
 . "$HOME/.asdf/asdf.sh"
 
