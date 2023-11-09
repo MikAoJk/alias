@@ -163,7 +163,8 @@ alias gcppostgressqlproxy='nais postgres proxy'
 alias javalist='sdk list java'
 alias javainstall21='sdk install java 21-tem'
 alias javaversion='sdk current java'
-alias javachangeversion='sdk use java 20-tem'
+alias javause17='sdk use java 17.0.9-tem'
+alias javause21='sdk use java 21-tem'
 
 #ASDF
 . "$HOME/.asdf/asdf.sh"
