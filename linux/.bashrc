@@ -122,7 +122,8 @@ alias kubectlchangenamespaceteamsykmelding='kubectl config set-context --current
 alias kubectlCreateSecret='kubectl create secret generic my-secret --from-literal=key1=supersecret'
 alias kubectlGetSecret='kubectl get secret db-user-pass -o jsonpath="'"{.data.password}"'" | base64 --decode'
 alias kubectlExecShell='kubectl exec --stdin --tty smtss-6dc66d6cf9-92fwh -- /bin/bash'
-alias kubectldeletePodsContainerStatusUnknown='kubectl get pods | grep ContainerStatusUnknown | awk "{print $1}" | xargs kubectl delete pod -o name'
+alias kubectldeletePodsContainerStatusUnknown='kubectl get pods | grep ContainerStatusUnknown | awk '\''{print $1}'\'' | xargs kubectl delete pod -o name'
+alias kubectldeletePodsRestarted='kubectl get pods |awk  '\''$5<0'\'' | awk  '\''{print $1}'\'' | xargs kubectl delete pod -o name'
 
 # apt
 alias holdkubectl='sudo apt-mark hold kubectl'
