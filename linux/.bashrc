@@ -164,8 +164,11 @@ alias gcppostgressqlproxy='nais postgres proxy'
 
 #SDK man
 alias javalist='sdk list java'
+alias javainstall11='sdk install java 11.0.24-tem'
+alias javainstall17='sdk install java 17.0.11-tem'
 alias javainstall21='sdk install java 21-tem'
 alias javaversion='sdk current java'
+alias javause17='sdk use java 11.0.24-tem'
 alias javause17='sdk use java 17.0.9-tem'
 alias javause21='sdk use java 21-tem'
 
