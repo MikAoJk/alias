@@ -102,5 +102,3 @@ alias jdk8='JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Conten
 alias jdk10='JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home" PATH="$PATH:/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin"'
 alias jdk11='JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home" PATH="$PATH:/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/bin"'
 alias mvnjdk8="JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home mvn clean install"
-alias findpidforport='cmd //c netstat -aon | findstr $1'
-alias killpid='cmd //c Taskkill /PID $1 /F'
