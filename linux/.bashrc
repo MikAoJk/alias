@@ -175,6 +175,10 @@ alias javause17='sdk use java 11.0.24-tem'
 alias javause17='sdk use java 17.0.9-tem'
 alias javause21='sdk use java 21-tem'
 
+
+#Github cli
+alias ghnewrepo='gh repo create my-new-repo --public --description "Example repository"'
+
 #ASDF
 . "$HOME/.asdf/asdf.sh"
 
