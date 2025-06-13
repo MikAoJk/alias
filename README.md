@@ -1,2 +1,2 @@
 # Joakims alias
-Repo for aliases that are nice to have
+Repo for alias and expoet that are nice to have
