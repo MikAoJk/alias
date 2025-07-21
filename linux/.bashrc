@@ -177,6 +177,12 @@ alias javause21='sdk use java 21-tem'
 
 
 #Github cli
+function githubnewrepo{
+  gh repo create $@
+}
+
+alias githubnewrepo ='githubnewrepo'
+
 alias ghnewrepo='gh repo create my-new-repo --public --description "Example repository"'
 
 #ASDF
