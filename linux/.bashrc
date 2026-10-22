@@ -176,6 +176,10 @@ alias javause17='sdk use java 17.0.9-tem'
 alias javause21='sdk use java 21-tem'
 alias javause25='sdk use java 25-tem'
 
+#TSM cli https://github.com/navikt/tsm-cli
+alias bumpdistrolessnode24='tsm repos --update-distroless node24'
+alias bumpdistrolessjava25='tsm repos --update-distroless java25'
+
 
 #Github cli
 function githubnewrepo{
